@@ -2,8 +2,10 @@ from typing import Optional
 
 
 class ProductModel:
-    def __init__(self, name: str, is_vegetarian: bool, is_vegan: bool, contains_sugar: bool, price: float,
-                 image_path: str, category: str, day: Optional[str] = None):
+    def __init__(self, name: str, is_vegetarian: bool, is_vegan: bool,
+                 contains_sugar: bool, price: float, image_path: str,
+                 category: str, day: Optional[str] = None,
+                 country: Optional[str] = None):
         self._name = name
         self._is_vegetarian = is_vegetarian
         self._is_vegan = is_vegan
@@ -12,6 +14,7 @@ class ProductModel:
         self._image_path = image_path
         self._category = category
         self._day = day
+        self._country = country
 
     @property
     def name(self) -> str:
@@ -42,8 +45,12 @@ class ProductModel:
         return self._category
 
     @property
-    def day(self):
+    def day(self) -> Optional[str]:
         return self._day
+
+    @property
+    def country(self) -> Optional[str]:
+        return self._country
 
     def __hash__(self):
         return hash(repr(self))

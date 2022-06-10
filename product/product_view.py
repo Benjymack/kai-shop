@@ -61,16 +61,29 @@ class ProductView(QPushButton):
         pixmap = QPixmap(product.image_path)
         pixmap = pixmap.scaledToHeight(100)
         self._image_label.setPixmap(pixmap)
-        self._layout.addWidget(self._image_label, alignment=Qt.AlignCenter)
+        self._add_widget(self._image_label)
 
         self._name_label = QLabel(product.name)
-        self._layout.addWidget(self._name_label, alignment=Qt.AlignCenter)
+        self._add_widget(self._name_label)
 
         self._is_vegetarian_label = QLabel(f'Vegetarian: {"✓" if product.is_vegetarian else "❌"}')
-        self._layout.addWidget(self._is_vegetarian_label, alignment=Qt.AlignCenter)
+        self._add_widget(self._is_vegetarian_label)
 
         self._is_vegan_label = QLabel(f'Vegan: {"✓" if product.is_vegan else "❌"}')
-        self._layout.addWidget(self._is_vegan_label, alignment=Qt.AlignCenter)
+        self._add_widget(self._is_vegan_label)
+
+        self._sugar_label = QLabel(f'Added Sugar: {"✓" if product.contains_sugar else "❌"}')
+        self._add_widget(self._sugar_label)
+
+        if product.country is not None:
+            self._country_label = QLabel(product.country)
+            self._add_widget(self._country_label)
+
+        self._cost_label = QLabel(f'${product.price:.2f}')
+        self._add_widget(self._cost_label)
 
     def sizeHint(self) -> QSize:
         return QSize(150, 200)
+
+    def _add_widget(self, widget: QWidget):
+        self._layout.addWidget(widget, alignment=Qt.AlignCenter)
