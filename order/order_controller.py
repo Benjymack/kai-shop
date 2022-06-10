@@ -1,6 +1,6 @@
-from order_model import OrderModel
-from order_view import OrderView
-from product_model import ProductModel
+from .order_model import OrderModel
+from .order_view import OrderView
+from product.product_model import ProductModel
 
 
 class OrderController:

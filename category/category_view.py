@@ -2,7 +2,7 @@ from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton
 from PySide6.QtGui import QPixmap
 from PySide6.QtCore import QSize, Qt
 
-from category_model import CategoryModel
+from .category_model import CategoryModel
 
 
 class CategoriesView(QWidget):

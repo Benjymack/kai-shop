@@ -1,10 +1,11 @@
-from typing import Callable, Any
+from typing import Callable
 
-from PySide6.QtWidgets import QWidget, QLabel, QHBoxLayout, QStackedWidget, QVBoxLayout, QPushButton
+from PySide6.QtWidgets import QWidget, QLabel, QHBoxLayout, QStackedWidget, \
+    QVBoxLayout, QPushButton
 from PySide6.QtGui import QPixmap
 from PySide6.QtCore import QSize, Qt
 
-from product_model import ProductModel
+from .product_model import ProductModel
 
 
 class ProductsView(QStackedWidget):

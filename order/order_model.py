@@ -1,4 +1,4 @@
-from product_model import ProductModel
+from product.product_model import ProductModel
 from dataclasses import dataclass
 
 

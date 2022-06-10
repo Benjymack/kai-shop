@@ -1,11 +1,12 @@
 from typing import Optional, Callable
 
-from category_model import CategoryModel
-from categories_view import CategoriesView, CategoryView
+from .category_model import CategoryModel
+from .category_view import CategoriesView, CategoryView
 
 
 class CategoryController:
-    def __init__(self, categories_view: CategoriesView, category_changed_function: Callable[[str], None]):
+    def __init__(self, categories_view: CategoriesView,
+                 category_changed_function: Callable[[str], None]):
         self._categories_view = categories_view
 
         self._categories: dict[str, CategoryModel] = {}

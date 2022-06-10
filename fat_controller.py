@@ -1,16 +1,16 @@
 import json
 
-from category_controller import CategoryController
-from category_model import CategoryModel
-from categories_view import CategoriesView
+from category.category_controller import CategoryController
+from category.category_model import CategoryModel
+from category.category_view import CategoriesView
 
-from product_controller import ProductController
-from product_model import ProductModel
-from products_view import ProductsView
+from product.product_controller import ProductController
+from product.product_model import ProductModel
+from product.product_view import ProductsView
 
-from order_controller import OrderController
-from order_model import OrderModel
-from order_view import OrderView
+from order.order_controller import OrderController
+from order.order_model import OrderModel
+from order.order_view import OrderView
 
 
 class FatController:

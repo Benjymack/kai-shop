@@ -1,7 +1,7 @@
 from typing import Optional, Callable
 
-from product_model import ProductModel
-from products_view import ProductsView
+from .product_model import ProductModel
+from .product_view import ProductsView
 
 
 class ProductController:

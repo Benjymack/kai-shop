@@ -1,11 +1,11 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QHBoxLayout
 
-from categories_view import CategoriesView
+from category.category_view import CategoriesView
 
-from order_model import OrderModel
-from order_view import OrderView
+from order.order_model import OrderModel
+from order.order_view import OrderView
 
-from products_view import ProductsView
+from product.product_view import ProductsView
 
 from fat_controller import FatController
 
