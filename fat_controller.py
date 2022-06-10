@@ -32,7 +32,7 @@ class FatController:
         self._product_controller.initialise_categories(self._order_controller.add_product)
 
     def _load_products_from_file(self):
-        with open('new_menu.json', 'r', encoding='utf-8') as file:
+        with open('menu.json', 'r', encoding='utf-8') as file:
             json_products = json.load(file)
 
         categories = set()

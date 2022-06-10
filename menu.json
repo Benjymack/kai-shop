@@ -142,7 +142,8 @@
     "contains_sugar": true,
     "image_path": "./images/daily/kale_moa.jpg",
     "category": "Daily Special",
-    "day": "Monday"
+    "day": "Monday",
+    "country": "Samoa"
   },
   {
     "name": "Potjiekos",
@@ -152,7 +153,8 @@
     "contains_sugar": false,
     "image_path": "./images/daily/potjiekos.jpg",
     "category": "Daily Special",
-    "day": "Tuesday"
+    "day": "Tuesday",
+    "country": "South Africa"
   },
   {
     "name": "H\u0101ng\u012b",
@@ -162,7 +164,8 @@
     "contains_sugar": false,
     "image_path": "./images/daily/hangi.jpg",
     "category": "Daily Special",
-    "day": "Wednesday"
+    "day": "Wednesday",
+    "country": "New Zealand"
   },
   {
     "name": "Paneer Tikka Masala",
@@ -172,7 +175,8 @@
     "contains_sugar": true,
     "image_path": "./images/daily/paneer_tikka_masala.jpg",
     "category": "Daily Special",
-    "day": "Thursday"
+    "day": "Thursday",
+    "country": "India"
   },
   {
     "name": "Chow mein",
@@ -182,6 +186,7 @@
     "contains_sugar": false,
     "image_path": "./images/daily/chow_mein.jpg",
     "category": "Daily Special",
-    "day": "Friday"
+    "day": "Friday",
+    "country": "China"
   }
 ]
