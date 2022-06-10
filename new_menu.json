@@ -1,0 +1,187 @@
+[
+  {
+    "name": "Ham & egg sandwich",
+    "price": 3.5,
+    "is_vegetarian": false,
+    "is_vegan": false,
+    "contains_sugar": false,
+    "image_path": "./images/sandwiches/ham_and_egg_sandwich.jpg",
+    "category": "Sandwiches"
+  },
+  {
+    "name": "Chicken mayo sandwich",
+    "price": 3.5,
+    "is_vegetarian": false,
+    "is_vegan": false,
+    "contains_sugar": false,
+    "image_path": "./images/sandwiches/chicken_mayo_sandwich.jpg",
+    "category": "Sandwiches"
+  },
+  {
+    "name": "Egg sandwich",
+    "price": 3.0,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "contains_sugar": false,
+    "image_path": "./images/sandwiches/egg_sandwich.jpg",
+    "category": "Sandwiches"
+  },
+  {
+    "name": "Beef sandwich",
+    "price": 3.8,
+    "is_vegetarian": false,
+    "is_vegan": false,
+    "contains_sugar": false,
+    "image_path": "./images/sandwiches/beef_sandwich.jpg",
+    "category": "Sandwiches"
+  },
+  {
+    "name": "Salad sandwich",
+    "price": 3.2,
+    "is_vegetarian": true,
+    "is_vegan": true,
+    "contains_sugar": false,
+    "image_path": "./images/sandwiches/salad_sandwich.jpg",
+    "category": "Sandwiches"
+  },
+  {
+    "name": "Chicken (3pc)",
+    "price": 4.5,
+    "is_vegetarian": false,
+    "is_vegan": false,
+    "contains_sugar": false,
+    "image_path": "./images/sushi/chicken_sushi.jpg",
+    "category": "Sushi"
+  },
+  {
+    "name": "Tuna (3pc)",
+    "price": 4.5,
+    "is_vegetarian": false,
+    "is_vegan": false,
+    "contains_sugar": false,
+    "image_path": "./images/sushi/tuna_sushi.jpg",
+    "category": "Sushi"
+  },
+  {
+    "name": "Avocado (3pc)",
+    "price": 4.8,
+    "is_vegetarian": true,
+    "is_vegan": true,
+    "contains_sugar": false,
+    "image_path": "./images/sushi/avocado_sushi.jpg",
+    "category": "Sushi"
+  },
+  {
+    "name": "Chicken rice bowl",
+    "price": 5.5,
+    "is_vegetarian": false,
+    "is_vegan": false,
+    "contains_sugar": false,
+    "image_path": "./images/sushi/chicken_rice_bowl.jpg",
+    "category": "Sushi"
+  },
+  {
+    "name": "Vegetarian rice bowl",
+    "price": 5.5,
+    "is_vegetarian": true,
+    "is_vegan": true,
+    "contains_sugar": false,
+    "image_path": "./images/sushi/vegetarian_rice_bowl.jpg",
+    "category": "Sushi"
+  },
+  {
+    "name": "Soda can",
+    "price": 2.0,
+    "is_vegetarian": true,
+    "is_vegan": true,
+    "contains_sugar": true,
+    "image_path": "./images/drinks/soda_can.jpg",
+    "category": "Drinks"
+  },
+  {
+    "name": "Aloe vera drink",
+    "price": 3.5,
+    "is_vegetarian": true,
+    "is_vegan": true,
+    "contains_sugar": true,
+    "image_path": "./images/drinks/aloe_vera_drink.jpg",
+    "category": "Drinks"
+  },
+  {
+    "name": "Chocolate milk",
+    "price": 3.5,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "contains_sugar": true,
+    "image_path": "./images/drinks/chocolate_milk.jpg",
+    "category": "Drinks"
+  },
+  {
+    "name": "Water Bottle",
+    "price": 2.5,
+    "is_vegetarian": true,
+    "is_vegan": true,
+    "contains_sugar": false,
+    "image_path": "./images/drinks/water_bottle.jpg",
+    "category": "Drinks"
+  },
+  {
+    "name": "Instant Hot Chocolate",
+    "price": 1.5,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "contains_sugar": true,
+    "image_path": "./images/drinks/instant_hot_chocolate.jpg",
+    "category": "Drinks"
+  },
+  {
+    "name": "Kale Moa",
+    "price": 6.0,
+    "is_vegetarian": false,
+    "is_vegan": false,
+    "contains_sugar": true,
+    "image_path": "./images/daily/kale_moa.jpg",
+    "category": "Daily Special",
+    "day": "Monday"
+  },
+  {
+    "name": "Potjiekos",
+    "price": 6.0,
+    "is_vegetarian": false,
+    "is_vegan": false,
+    "contains_sugar": false,
+    "image_path": "./images/daily/potjiekos.jpg",
+    "category": "Daily Special",
+    "day": "Tuesday"
+  },
+  {
+    "name": "H\u0101ng\u012b",
+    "price": 6.0,
+    "is_vegetarian": true,
+    "is_vegan": true,
+    "contains_sugar": false,
+    "image_path": "./images/daily/hangi.jpg",
+    "category": "Daily Special",
+    "day": "Wednesday"
+  },
+  {
+    "name": "Paneer Tikka Masala",
+    "price": 6.0,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "contains_sugar": true,
+    "image_path": "./images/daily/paneer_tikka_masala.jpg",
+    "category": "Daily Special",
+    "day": "Thursday"
+  },
+  {
+    "name": "Chow mein",
+    "price": 6.0,
+    "is_vegetarian": true,
+    "is_vegan": true,
+    "contains_sugar": false,
+    "image_path": "./images/daily/chow_mein.jpg",
+    "category": "Daily Special",
+    "day": "Friday"
+  }
+]
