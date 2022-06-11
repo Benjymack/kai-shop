@@ -16,7 +16,8 @@ class ProductController:
         self._products_view.set_current_category(self._current_category_name)
 
     def _get_current_category_products(self) -> list[ProductModel]:
-        return [product for product in self._products if product.category == self._current_category_name]
+        return [product for product in self._products if
+                product.category == self._current_category_name]
 
     def add_product(self, product: ProductModel):
         self._products.append(product)
@@ -24,5 +25,12 @@ class ProductController:
     def get_category_names(self) -> list[str]:
         return list(set(product.category for product in self._products))
 
-    def initialise_categories(self, callback: Callable[[ProductModel], None]):
-        self._products_view.add_products(self._products, callback)
+    def initialise_categories(self, callback: Callable[[ProductModel], None],
+                              day: Optional[str] = None):
+        if day is None:
+            products_to_show = self._products
+        else:
+            products_to_show = [product for product in self._products if
+                                product.day is None or product.day == day]
+
+        self._products_view.add_products(products_to_show, callback)

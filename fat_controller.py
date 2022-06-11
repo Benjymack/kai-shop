@@ -14,7 +14,10 @@ from order.order_view import OrderView
 
 
 class FatController:
-    def __init__(self, categories_view: CategoriesView, products_view: ProductsView, order_view: OrderView,
+    def __init__(self,
+                 categories_view: CategoriesView,
+                 products_view: ProductsView,
+                 order_view: OrderView,
                  order_model: OrderModel):
         self._categories_view = categories_view
         self._products_view = products_view
@@ -22,14 +25,17 @@ class FatController:
         self._order_model = order_model
 
         self._product_controller = ProductController(self._products_view)
-        self._category_controller = CategoryController(self._categories_view,
-                                                       self._product_controller.set_current_category)
-        self._order_controller = OrderController(self._order_view, self._order_model)
+        self._category_controller = CategoryController(
+            self._categories_view,
+            self._product_controller.set_current_category
+        )
+        self._order_controller = OrderController(self._order_view,
+                                                 self._order_model)
 
     def initialise(self):
         self._load_products_from_file()
         self._category_controller.initialise()
-        self._product_controller.initialise_categories(self._order_controller.add_product)
+        self._order_controller.set_day_callback(self._set_day)
 
     def _load_products_from_file(self):
         with open('menu.json', 'r', encoding='utf-8') as file:
@@ -43,3 +49,8 @@ class FatController:
 
         for category in categories:
             self._category_controller.add_category(CategoryModel(category))
+
+    def _set_day(self, day: str):
+        self._product_controller.initialise_categories(
+            self._order_controller.add_product, day)
+        self._order_controller.set_day(day)

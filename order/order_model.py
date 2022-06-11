@@ -28,6 +28,11 @@ class OrderModel:
     def remove_order_item(self, order_item_id: int):
         del self._order_items[order_item_id]
 
+    def remove_items_not_on_day(self, day: str):
+        self._order_items = [order_item for order_item in self._order_items
+                             if order_item.product.day == day or
+                             order_item.product.day is None]
+
 
 @dataclass
 class OrderItem:

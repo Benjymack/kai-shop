@@ -16,6 +16,14 @@ class ProductsView(QStackedWidget):
 
     def add_products(self, products: list[ProductModel], callback: Callable[[ProductModel], None]):
         category_products = {}
+        self._category_indexes = {}
+
+        current_category_index = self.currentIndex()
+
+        while self.count() > 0:
+            widget = self.widget(0)
+            self.removeWidget(widget)
+            widget.deleteLater()
 
         for product in products:
             if product.category not in category_products:
@@ -30,6 +38,8 @@ class ProductsView(QStackedWidget):
 
             self._category_indexes[category] = current_index
             current_index += 1
+
+        self.setCurrentIndex(current_category_index)
 
     def set_current_category(self, category_name: str):
         self.setCurrentIndex(self._category_indexes[category_name])

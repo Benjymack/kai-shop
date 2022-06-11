@@ -16,7 +16,6 @@ class CategoriesView(QWidget):
 
     def setup_categories(self, categories: dict[str, CategoryModel]) -> list[tuple[CategoryModel, 'CategoryView']]:
         for _, widget in self._category_views:
-            print(widget)
             self._layout.removeWidget(widget)
             widget.deleteLater()
 
